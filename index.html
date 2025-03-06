@@ -10,37 +10,31 @@
             font-family: 'Press Start 2P', cursive;
             margin: 0;
             padding: 0;
-            background: linear-gradient(45deg, #1e1e1e, #4e4e4e); /* Dark gradient background for a retro look */
+            background: linear-gradient(45deg, #1a1a1a, #3c3c3c); /* Darker retro background */
+            color: #fff;
             overflow-x: hidden;
-            color: #fff; /* White text for contrast */
         }
         .container {
             max-width: 900px;
             margin: 50px auto;
             padding: 30px;
-            background: #222; /* Dark background for content box */
+            background: #222;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             border-radius: 15px;
             text-align: center;
-            color: #fff;
-            transform: scale(0.98);
-            transition: transform 0.3s ease;
-        }
-        .container:hover {
-            transform: scale(1);
         }
         h1 {
             font-size: 3em;
-            color: #ff00ff; /* Neon pink color for heading */
+            color: #ff00ff; /* Neon pink color */
             text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.6);
         }
         p {
             font-size: 1.2em;
             margin-bottom: 30px;
-            color: #ddd; /* Light gray text for readability */
+            color: #ddd;
         }
         .cta {
-            background: linear-gradient(135deg, #ff007f, #00f5a0); /* Neon pink to neon green gradient */
+            background: linear-gradient(135deg, #ff007f, #00f5a0);
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
@@ -55,16 +49,12 @@
         .service {
             margin-bottom: 25px;
             padding: 20px;
-            background: linear-gradient(135deg, #4e4e4e, #ff00ff); /* Gradient background for each service */
+            background: #333; /* Default dark background */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 255, 160, 0.5);
-            transition: transform 0.3s ease, background 0.3s ease;
-            overflow: hidden; /* Ensures content remains contained */
-            max-height: 120px;
-        }
-        .service:hover {
-            transform: translateY(-5px);
-            background: linear-gradient(135deg, #00f5a0, #ff00ff); /* Swap the gradient on hover */
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            position: relative;
         }
         .service h3 {
             font-size: 1.5em;
@@ -74,19 +64,26 @@
         .service p {
             font-size: 1em;
             color: #fff;
-            display: none;
-            padding-top: 10px;
+            margin-top: 10px;
+            display: none; /* Initially hidden */
+            padding-left: 20px;
+            padding-right: 20px;
+            transition: transform 0.3s ease;
+        }
+        .service:hover {
+            transform: translateX(-200px); /* Slides left on hover */
         }
         .service:hover p {
-            display: block; /* Show details on hover */
-            transition: all 0.3s ease;
+            display: block;
+            transform: translateX(200px); /* Reveal description on hover */
+            transition: transform 0.3s ease-in-out;
         }
         .profile-img {
             width: 160px;
             height: 160px;
             border-radius: 50%;
             margin: 20px auto;
-            border: 5px solid #ff00ff; /* Neon pink border */
+            border: 5px solid #ff00ff;
             box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
             transition: transform 0.3s ease;
         }
@@ -97,7 +94,7 @@
             display: inline-block;
             margin: 15px;
             padding: 15px 25px;
-            background: linear-gradient(135deg, #ff00ff, #00f5a0); /* Gradient buttons */
+            background: linear-gradient(135deg, #ff00ff, #00f5a0);
             color: white;
             text-decoration: none;
             border-radius: 5px;
