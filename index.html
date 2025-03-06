@@ -10,7 +10,7 @@
             font-family: 'Press Start 2P', cursive;
             margin: 0;
             padding: 0;
-            background: #121212; /* Darker background for better readability */
+            background: linear-gradient(45deg, #1e1e1e, #4e4e4e); /* Dark gradient background for a retro look */
             overflow-x: hidden;
             color: #fff; /* White text for contrast */
         }
@@ -18,7 +18,7 @@
             max-width: 900px;
             margin: 50px auto;
             padding: 30px;
-            background: #333; /* Dark background with contrast */
+            background: #222; /* Dark background for content box */
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
             border-radius: 15px;
             text-align: center;
@@ -31,8 +31,8 @@
         }
         h1 {
             font-size: 3em;
-            color: #00f5a0; /* Bright accent color for headers */
-            text-shadow: 0 0 10px rgba(0, 255, 160, 0.8), 0 0 20px rgba(0, 255, 160, 0.6);
+            color: #ff00ff; /* Neon pink color for heading */
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.8), 0 0 20px rgba(255, 0, 255, 0.6);
         }
         p {
             font-size: 1.2em;
@@ -40,7 +40,7 @@
             color: #ddd; /* Light gray text for readability */
         }
         .cta {
-            background: #ff007f;
+            background: linear-gradient(135deg, #ff007f, #00f5a0); /* Neon pink to neon green gradient */
             padding: 20px;
             margin: 20px 0;
             border-radius: 10px;
@@ -55,27 +55,39 @@
         .service {
             margin-bottom: 25px;
             padding: 20px;
-            background: #444;
+            background: linear-gradient(135deg, #4e4e4e, #ff00ff); /* Gradient background for each service */
             border-radius: 10px;
             box-shadow: 0 0 15px rgba(0, 255, 160, 0.5);
             transition: transform 0.3s ease, background 0.3s ease;
+            overflow: hidden; /* Ensures content remains contained */
+            max-height: 120px;
         }
         .service:hover {
             transform: translateY(-5px);
-            background: #00f5a0;
+            background: linear-gradient(135deg, #00f5a0, #ff00ff); /* Swap the gradient on hover */
         }
         .service h3 {
             font-size: 1.5em;
-            color: #ff007f;
-            text-shadow: 0 0 10px rgba(255, 0, 127, 0.8);
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 0, 255, 0.8);
+        }
+        .service p {
+            font-size: 1em;
+            color: #fff;
+            display: none;
+            padding-top: 10px;
+        }
+        .service:hover p {
+            display: block; /* Show details on hover */
+            transition: all 0.3s ease;
         }
         .profile-img {
             width: 160px;
             height: 160px;
             border-radius: 50%;
             margin: 20px auto;
-            border: 5px solid #00f5a0;
-            box-shadow: 0 0 20px rgba(0, 255, 160, 0.8);
+            border: 5px solid #ff00ff; /* Neon pink border */
+            box-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
             transition: transform 0.3s ease;
         }
         .profile-img:hover {
@@ -85,7 +97,7 @@
             display: inline-block;
             margin: 15px;
             padding: 15px 25px;
-            background: #ff007f;
+            background: linear-gradient(135deg, #ff00ff, #00f5a0); /* Gradient buttons */
             color: white;
             text-decoration: none;
             border-radius: 5px;
@@ -93,7 +105,7 @@
             transition: transform 0.3s ease, background 0.3s ease;
         }
         .links a:hover {
-            background: #00f5a0;
+            background: linear-gradient(135deg, #00f5a0, #ff00ff);
             transform: scale(1.1);
         }
         @keyframes backgroundAnimation {
@@ -126,15 +138,15 @@
             <h2>What I Offer</h2>
             <div class="service">
                 <h3>🎨 GFX Design</h3>
-                <p>Need a custom thumbnail, profile picture, or banner? I’ll create stunning designs to fit your brand.</p>
+                <p>Custom thumbnails, profile pictures, and banners, all created to match your style!</p>
             </div>
             <div class="service">
                 <h3>⚡ Discord Server Making</h3>
-                <p>Get your very own professional server, tailored to your needs with custom setups and bots.</p>
+                <p>Let me build your personalized server with bots, roles, and custom designs for your community.</p>
             </div>
             <div class="service">
                 <h3>💡 Personal Tech Tips</h3>
-                <p>Reach out for one-on-one personalized tech advice via DMs or an online meeting. I'm here to help!</p>
+                <p>Get one-on-one tech advice, whether it’s a quick DM chat or a full online meeting. I’m here to help!</p>
             </div>
         </div>
 
