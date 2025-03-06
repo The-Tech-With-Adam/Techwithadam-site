@@ -10,61 +10,112 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            background-color: #f4f4f4;
+            background-color: #f1f1f1;
         }
         .container {
             max-width: 800px;
             margin: 50px auto;
             padding: 20px;
-            background: white;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: #ffffff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
+            transition: transform 0.3s ease-in-out;
+        }
+        .container:hover {
+            transform: scale(1.02);
         }
         h1 {
             color: #333;
+            font-size: 2.5em;
+        }
+        p {
+            color: #555;
+            font-size: 1.1em;
+            margin-bottom: 30px;
         }
         .services {
-            margin-top: 20px;
+            margin-top: 30px;
             text-align: left;
+            color: #333;
         }
         .service {
             margin-bottom: 20px;
-            padding: 10px;
-            background: #e3e3e3;
+            padding: 15px;
+            background: #fffbf1;
+            border-left: 5px solid #0073e6;
             border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+        .service:hover {
+            transform: translateX(5px);
+        }
+        .service h3 {
+            color: #0073e6;
+            font-size: 1.4em;
+        }
+        .service p {
+            color: #555;
+        }
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin: 20px auto;
+            border: 5px solid #0073e6;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
         .links a {
             display: inline-block;
-            margin: 10px;
-            padding: 10px 15px;
+            margin: 15px;
+            padding: 15px 25px;
             background: #0073e6;
             color: white;
             text-decoration: none;
             border-radius: 5px;
+            font-size: 1.2em;
+            transition: background 0.3s ease;
+        }
+        .links a:hover {
+            background: #005bb5;
+        }
+        .cta {
+            margin-top: 30px;
+            font-size: 1.4em;
+            color: #333;
+            background: #ffea7d;
+            padding: 15px;
+            border-radius: 5px;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to Tech With Adam</h1>
-        <p>I create tech tip videos and offer services to help you with design, Discord servers, and personal tech advice.</p>
+        <img class="profile-img" src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/fe4315c0ef419d3c58c74d0b88e776a9~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=34579461&x-expires=1741417200&x-signature=p5BoVuCmaMYxwxQQUUQOuLUiZuU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my" alt="Tech With Adam" />
+        <h1>Welcome to Tech With Adam!</h1>
+        <p>Your one-stop place for tech tips, custom designs, and Discord server setups. I'm here to help you with affordable services, no matter your tech needs!</p>
         
+        <div class="cta">
+            💡 Ready to level up your tech game? Let me help you with my affordable services and personal touch. Let's create something amazing together!
+        </div>
+
         <div class="services">
-            <h2>My Services</h2>
+            <h2>What I Offer</h2>
             <div class="service">
                 <h3>🎨 GFX Design</h3>
-                <p>Custom thumbnails, profile pictures, banners, and more.</p>
+                <p>Need a custom thumbnail, profile picture, or banner? I’ll design eye-catching visuals that represent your style!</p>
             </div>
             <div class="service">
                 <h3>⚡ Discord Server Making</h3>
-                <p>Need a professional server setup? I’ll build and customize it for you.</p>
+                <p>Get a professionally made server tailored to your needs! Whether you want it for gaming, work, or community building, I've got you covered.</p>
             </div>
             <div class="service">
                 <h3>💡 Personal Tech Tips</h3>
-                <p>One-on-one tech guidance via DMs or an online meeting.</p>
+                <p>Have questions? Get one-on-one advice from me through DMs or a personal online meeting. I’ll guide you through anything tech-related!</p>
             </div>
         </div>
-        
+
         <div class="links">
             <h2>Connect With Me</h2>
             <a href="https://www.youtube.com/@techwithadam_official" target="_blank">📺 YouTube</a>
